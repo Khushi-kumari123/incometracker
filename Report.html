@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - MoneyTrack</title>
+    <link rel="stylesheet" href="../css/new.css">
+    <script src="../js/App.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>MoneyTrack</h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="addincome.html">Add Income</a>
+            <a href="addexpense.html">Add Expense</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="report.html" class="active">Reports</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Financial Reports</h1>
+        <p>Check your monthly financial overview.</p>
+
+        <label>Select Month</label>
+        <input type="month" id="monthFilter">
+
+        <div class="cards">
+
+            <div class="stat">
+                <h3>Total Income</h3>
+                <h2 id="incomeTotal" class="green">₹0</h2>
+            </div>
+
+            <div class="stat">
+                <h3>Total Expenses</h3>
+                <h2 id="expenseTotal" class="red">₹0</h2>
+            </div>
+
+            <div class="stat">
+                <h3>Net Balance</h3>
+                <h2 id="balanceTotal" class="blue">₹0</h2>
+            </div>
+
+        </div>
+
+        <div class="panel">
+            <h2>Monthly Transactions</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="reportRows"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

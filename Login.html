@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styleLo.css">
+  
+</head>
+<body>
+    <div id="Login">
+    <h1>Welcome Back</h1>
+    <p>Sign in to your Cash Sense account</p>
+    <form id="loginform">
+        <label><b>Email Address</b></label><br>
+        <input type="email" id="email"><br>
+        <label><b>Password </b></label><br>
+        <input type="password" id="password"><br>
+        
+        <button type="submit" class="sign-btn" >Sign in </button>
+        <p id="message"></p>
+        <a href="#"> forget Password </a>
+    </form>
+</div>
+<script>
+
+    let form=document.getElementById("loginform");
+    form.addEventListener("submit",function(event)
+{
+    event.preventDefault();
+    let email=document.getElementById("email").value.trim();
+    let password=document.getElementById("password").value.trim();
+    let message=document.getElementById("message");
+    if(email===""||password==="")
+    {
+        message.innerHTML="please fill all the fields!";
+        message.style.color="red";
+    }
+    else if(password.length<6)
+    {
+        message.innerHTML="password must be atleast 6 character";
+        message.style.color="red";
+    }
+    else{
+        message.innerHTML="Login successfully!";
+        message.style.color="green";
+        setTimeout(function(){
+            window.location.href="sign.html";
+        },1000);
+    }
+});
+
+</script>
+</body>
+</html>

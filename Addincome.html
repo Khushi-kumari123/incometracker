@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Income - MoneyTrack</title>
+    <link rel="stylesheet" href="../css/new.css">
+    <script src="../js/App.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>MoneyTrack</h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="addincome.html" class="active">Add Income</a>
+            <a href="addexpense.html">Add Expense</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="report.html">Reports</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Add Income</h1>
+        <p>Record your income details below.</p>
+
+        <div class="panel">
+            <form id="transactionForm" data-type="income">
+
+                <label>Amount (₹)</label>
+                <input type="number" name="amount"
+                       placeholder="Enter amount" min="0.01"
+                       step="0.01" required>
+
+                <label>Income Category</label>
+                <select name="category" required>
+                    <option value="">Select Category</option>
+                    <option>Salary</option>
+                    <option>Business</option>
+                    <option>Freelancing</option>
+                    <option>Investment</option>
+                    <option>Pocket Money</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Date</label>
+                <input type="date" name="date" required>
+
+                <label>Description</label>
+                <input type="text" name="description"
+                       placeholder="Enter description">
+
+                <button type="submit">Save Income</button>
+
+                <p id="message"></p>
+
+            </form>
+        </div>
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

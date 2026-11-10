@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - MoneyTrack</title>
+    <link rel="stylesheet" href="../css/new.css">
+    <script src="../js/App.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>MoneyTrack</h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="addincome.html">Add Income</a>
+            <a href="addexpense.html">Add Expense</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="report.html">Reports</a>
+            <a href="profile.html" class="active">Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>My Profile</h1>
+        <p>Manage your personal information.</p>
+
+        <div class="panel">
+            <form id="profileForm">
+
+                <label>Full Name</label>
+                <input type="text" name="name"
+                       placeholder="Enter your name" required>
+
+                <label>Email Address</label>
+                <input type="email" name="email"
+                       placeholder="Enter email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" name="phone"
+                       placeholder="Enter phone number">
+
+                <button type="submit">Save Profile</button>
+
+                <p id="message"></p>
+
+            </form>
+        </div>
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

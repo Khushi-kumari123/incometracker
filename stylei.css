@@ -1,0 +1,129 @@
+body{
+    background-color:#f4f8ff;
+}
+nav{
+    color:white;
+}
+h1{
+    color:#1E3A8A;
+}
+p{
+    color:#555555;
+}
+#btn
+{
+display:flex;
+justify-content:center;
+flex-direction: row;
+margin-left:20px;
+padding-top:30px;
+align-items: center;
+gap:20px  
+}
+#get-started{
+    background-color:#2563Eb;
+    color:white; 
+    padding:15px;
+    font-size:15px;
+    border-radius:10px;
+    
+         
+    
+}
+#Learn-more{
+    background-color:white;
+    color:black;
+    padding:15px;
+    font-size:15px;
+    border-radius:10px;
+    
+}
+#container
+{
+display:flex;
+flex-direction: row;
+margin-left:30%;
+align-items: center;
+padding-top:50px;
+}
+#box1{
+    
+    display:inline-flexbox;
+    margin:10px;
+    height:100px;
+    width:200px;
+    border:solid 1px black;
+    text-align:center;
+    border-radius:10px;
+    font-size:20px;
+   
+}
+#box2{
+    
+    margin:10px;
+    height:100px;
+    width:200px;
+    border:solid 1px black;
+    text-align:center;
+    border-radius:10px;
+    font-size:20px;
+    
+}
+#box3{
+   
+    margin:10px;
+    height:100px;
+    width:200px;
+    border:solid 1px black;
+    text-align:center;
+    border-radius:10px;
+    font-size:20px;
+    
+}
+#container a
+{
+display:flex;
+padding-top:20px;
+justify-content:center;
+text-decoration: none;
+
+}
+.navbar{
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+}
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2ecc71; /* Green theme for money/income */
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1.5rem;
+}
+nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+#h11{
+    padding-top:50px;
+    display:flex;
+    justify-content:center;
+    font-size:50px;
+}
+#ppp
+{
+     font-size:20px;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+
+}
